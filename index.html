@@ -16,25 +16,63 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <div class="nav-container navbar-expand-lg">
+      <div class="container">
+        <!-- Navbar Medium to Large -->
+        <div class="row nav">
+          <div class="col-md-3 column left">
+            <a href="#" class="nav-link navbar-brand">RelAdvisor</a>
+          </div>
+          <div class="col-md-6">
+            <div class="row middle">
+              <div class="col-md-3 column justify-content-center">
+                <a href="#" class="nav-link nav-item">Estimation</a>
+              </div>
+              <div class="col-md-3 column justify-content-center">
+                <a href="#" class="nav-link nav-item">Selling</a>
+              </div>
+              <div class="col-md-3 column justify-content-center">
+                <a href="#" class="nav-link nav-item">Buy</a>
+              </div>
+              <div class="col-md-3 column justify-content-center">
+                <a href="#" class="nav-link nav-item">Finance</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-9 right-hidden">
+            <i class="nav-link nav-item bi bi-dash-square-fill burger" data-bs-toggle="collapse" data-bs-target="#navCollapse"></i>
+          </div> -->
+          <div class="col-md-2"></div>
+          <div class="col-md-1 right">
+            <a href="#" class="nav-link nav-item">Cek</a>
+          </div>
+        </div>
+        <!-- Navbar Small -->
+        <div class="small">
+          <a href="#" class="nav-link navbar-brand">RealAdvisor</a>
+          <a href="#" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+            <i class="nav-link bi bi-three-dots-vertical" data-bs-toggle="collapse" data-bs-target="#navCollapse"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-lg">
       <div class="container">
         <div class="left">
           <a href="#" class="navbar-brand"> RealAdvisor </a>
         </div>
-        <div class="middle">
-          <div class="row">
-            <div class="col-md-3">
-              <a href="#" class="nav-item">Estimate</a>
-            </div>
-            <div class="col-md-3">
-              <a href="#" class="nav-item">Estimate</a>
-            </div>
-            <div class="col-md-3">
-              <a href="#" class="nav-item">Estimate</a>
-            </div>
-            <div class="col-md-3">
-              <a href="#" class="nav-item">Estimate</a>
-            </div>
+        <div class="row">
+          <div class="col-md-3 column test">
+            <a href="#" class="nav-item">Est</a>
+          </div>
+          <div class="col-md-3 column test">
+            <a href="#" class="nav-item">Selling</a>
+          </div>
+          <div class="col-md-3 column test">
+            <a href="#" class="nav-item">Buy</a>
+          </div>
+          <div class="col-md-3 column test">
+            <a href="#" class="nav-item">Finance</a>
           </div>
         </div>
         <div class="right">
@@ -45,28 +83,24 @@
         </div>
       </div>
     </nav>
+     -->
     <div class="navs collapse sticky-top collapse-horizontal" id="navCollapse">
       <div class="navs-nav">
-        <div class="row align-items-center">
-          <div class="col-md-3 column d-flex">
-            <a href="#" class="close" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                <path
-                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="col-md-9 column d-flex">
-            <h5>RealAdvisor</h5>
-          </div>
-        </div>
-        <a href="">Bayu</a>
-        <a href="">Bayu</a>
-        <a href="">Bayu</a>
-        <a href="">Bayu</a>
+        <a href="#" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-x" viewBox="0 0 16 16">
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </a>
+        <h3>RealAdvisor</h3>
+        <a href="#" class="fw-bold fs-5 light">Bayu</a>
+        <a href="#" class="fw-bold fs-5 light">Bayu</a>
+        <a href="#" class="fw-bold fs-5 light">Bayu</a>
+        <a href="#" class="fw-bold fs-5 light">Bayu</a>
       </div>
     </div>
+
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
@@ -81,6 +115,49 @@
       </div>
     </div>
     <!-- Akhir Jumbotron -->
+
+    <!-- Sell Buy -->
+    <div class="sellbuy-container">
+      <div class="container">
+        <div class="sellbuy-text text-center">
+          <p>
+            <span class="fw-bold">RealAdvisor</span> is here to help wether you are <br />
+            buying or selling a house
+          </p>
+        </div>
+        <div class="row gap-3 justify-content-center">
+          <div class="selling col-md-5">
+            <div class="row py-3">
+              <div class="col-12 text-center">
+                <img src="img/house-svgrepo-com.svg" class="rounded-circle img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-12 text-center">
+                <h5 class="fw-bold">I'm a seller</h5>
+                <p class="text-muted">What is the market price? Is it good time to sell? How to choose agent?</p>
+                <a href="#">Sell my home <i class="bi bi-box-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="buying col-md-5">
+            <div class="row py-3">
+              <div class="col-12 text-center">
+                <img src="img/house-svgrepo-com.svg" class="rounded-circle img-fluid" alt="" />
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-12 text-center">
+                <h5 class="fw-bold">I'm a buyer</h5>
+                <p class="text-muted">How much is my dream house? Is this house over-priced? Can i afford this house?</p>
+                <a href="#">Sell my home <i class="bi bi-box-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Sell Buy -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
