@@ -10,6 +10,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- Import CSS , Bootstrap -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <title>FSW Kelompok 1</title>
@@ -19,34 +24,18 @@
     <div class="nav-container navbar-expand-lg">
       <div class="container">
         <!-- Navbar Medium to Large -->
-        <div class="row nav align-items-center">
-          <div class="col-md-3 column">
-            <a href="#" class="nav-link navbar-brand brand fw-bold">RealAdvisor</a>
-          </div>
-          <div class="col-md-7">
-            <div class="row middle">
-              <div class="col-md-3 p-0 text-center">
-                <a href="#" class="nav-item fw-bold">Estimation</a>
-              </div>
-              <div class="col-md-3 p-0 text-center">
-                <a href="#" class="nav-item fw-bold">Selling</a>
-              </div>
-              <div class="col-md-3 p-0 text-center">
-                <a href="#" class="nav-item fw-bold">Buy</a>
-              </div>
-              <div class="col-md-3 p-0 text-center">
-                <a href="#" class="nav-item fw-bold">Finance</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 text-end nav-right">
-            <a href="#" class="fw-bold">Test</a>
-          </div>
+        <div class="nav-med">
+          <a href="javascript:void(0)" class="openBtn" onclick="openNavMarg()">
+            <i class="bi bi-list"></i>
+          </a>
+          <a href="" class="nav-link fs-4 fw-bold brand">RealAdvisor</a>
         </div>
 
         <!-- Navbar Small -->
+      </div>
+      <div class="container-fluid">
         <div class="small align-items-center">
-          <a href="#" class="openBtn" onclick="openNav()">
+          <a href="javascript:void(0)" class="openBtn" onclick="openNav()">
             <i class="bi bi-list"></i>
           </a>
           <a href="#" class="nav-link navbar-brand">RealAdvisor</a>
@@ -56,11 +45,11 @@
 
     <!-- Sidebar Small -->
     <div class="sidebar" id="sidebar">
-      <a href="#" class="side-brand">RealAdvisor</a>
-      <a href="#" onclick="closeNav()" class="closeBtn">&times;</a>
-      <a href="#">Estimation</a>
-      <a href="#">Selling</a>
-      <a href="#">Buy</a>
+      <a href="" class="side-brand">RealAdvisor</a>
+      <a href="javascript:void(0)" onclick="closeNav()" class="closeBtn">&times;</a>
+      <a href="#estimation">Estimation</a>
+      <a href="#sellBuy">Sell Buy</a>
+      <a href="#steps">Steps</a>
       <a href="#">Cek</a>
     </div>
     <!-- Akhir Navbar -->
@@ -68,7 +57,7 @@
     <!-- Container semua kecuali navbar -->
     <div id="main" onclick="closeNav()">
       <!-- Jumbotron -->
-      <div class="jumbotron">
+      <div class="jumbotron" id="estimation">
         <div class="jumbotron-isi text-center">
           <h2 class="display-6">How much is my <span class="fw-bold">house worth?</span></h2>
           <p>Get your free valuation instantly in one click...</p>
@@ -81,7 +70,7 @@
       <!-- Akhir Jumbotron -->
 
       <!-- Sell Buy -->
-      <div class="sellbuy-container">
+      <div class="sellbuy-container" id="sellBuy">
         <div class="container">
           <div class="sellbuy-text text-center">
             <p>
@@ -90,7 +79,7 @@
             </p>
           </div>
           <div class="row gap-3 justify-content-center">
-            <div class="selling col-md-5">
+            <div class="selling col-md-5 my-3">
               <div class="row py-3">
                 <div class="col-12 text-center">
                   <img src="img/house-svgrepo-com.svg" class="rounded-circle img-fluid" alt="" />
@@ -104,7 +93,7 @@
                 </div>
               </div>
             </div>
-            <div class="buying col-md-5">
+            <div class="buying col-md-5 my-3">
               <div class="row py-3">
                 <div class="col-12 text-center">
                   <img src="img/house-svgrepo-com.svg" class="rounded-circle img-fluid" alt="" />
@@ -119,9 +108,44 @@
               </div>
             </div>
           </div>
+          <hr class="my-5" />
         </div>
       </div>
       <!-- Akhir Sell Buy -->
+
+      <!-- Steps -->
+      <div class="step-container container" id="steps">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h4 class="fw-bold text-center">RealAdvisor aims to improve everyone's experience of selling or buying a home with these 3 steps:</h4>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="img/smartphone-svgrepo-com.svg" width="100%" alt="" />
+          </div>
+          <div class="col-md-5">
+            <div>
+              <h1 class="display-1">1</h1>
+              <div class="fs-5">Describe your home online and get your appraisals in 3 minutes</div>
+            </div>
+            <div class="my-5">
+              <h1 class="display-1">2</h1>
+              <div class="fs-5">We match you with the best local agent to refine the appraisals and discuss your project</div>
+            </div>
+            <div class="my-5">
+              <h1 class="display-1">3</h1>
+              <div class="fs-5">If you decide you are ready to sell. We'll make you an offer</div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <hr />
+      </div>
+      <!-- Akhir Steps -->
     </div>
 
     <script
