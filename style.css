@@ -179,6 +179,9 @@ ul {
 }
 /* Akhir Sell Buy */
 
+footer a {
+  color: black;
+}
 @media (max-width: 576px) {
   .nav-med {
     display: none;
